@@ -29,6 +29,9 @@ public class ArquiteturaSpringApplication {
 		String applicantionName = environment.getProperty("spring.application.name");
 		System.out.println("Nome da aplicação: " + applicantionName);
 
+		ExemploValue value = applicationContext.getBean(ExemploValue.class);
+		value.imprimirVariavel();
+
 	}
 
 }
